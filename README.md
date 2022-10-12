@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Patizy-tel 6 Yrs Angular Development
+- 👋 Hi, I’m @Patizy-tel 6 Yrs Angular Developer
 - 👀 I’m interested in Frontend Development main Angular and  React
 - 🌱 I’m currently mastering Angular development and Ux
 - 💞️ I’m looking to collaborate on  Frontend related stuff
