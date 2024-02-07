@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @Patizy-tel 6 Years Full Stack Developer
-- 👀 I’m interested in Software Development mainly  Angular ,Reactjs ,  Nodejs and Mongodb
+- 👀 I’m interested in Software Development mainly NESTJS , Angular ,Reactjs ,  Nodejs and Mongodb
 - 🌱 I’m currently mastering Angular development and Ux
-- 💞️ I’m looking to collaborate on  Frontend related stuff
+- 💞️ I’m looking to collaborate on  Frontend related stuff or backend stuff
 - 📫 How to reach me  send a message on LinkedIn https://www.linkedin.com/in/patel-tanaka-3355a6100/
 
 <!---
