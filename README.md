@@ -3,7 +3,7 @@
 - 🌱 I’m currently mastering system perfomance , security ,scalability and optimisations
 - 💞️ I’m looking to collaborate on  Frontend related stuff or backend stuff
 - 📫 How to reach me  send a message on LinkedIn https://www.linkedin.com/in/patel-tanaka-3355a6100/
-![](https://komarev.com/ghpvc/?username=Patizy-tel&color=green)
+-    ![](https://komarev.com/ghpvc/?username=Patizy-tel&color=green)
 <!---
 Patizy-tel/Patizy-tel is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
