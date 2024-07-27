@@ -3,6 +3,7 @@
 - 🌱 I’m currently running  3 Startups , seasonal CTO in each of them
 - 💞️ I’m always experimenting ,  learning new stuff, making the world a  better place through technology
 - 📫 How to reach me  send a message on LinkedIn https://www.linkedin.com/in/patel-tanaka-3355a6100/
+-    Chekc out my portfolio https://pateltanaka.onrender.com/
 -    ![](https://komarev.com/ghpvc/?username=Patizy-tel&color=green)
 -    [![trophy](https://github-profile-trophy.vercel.app/?username=Patizy-tel)](https://github.com/Patizy-tel/github-profile-trophy)
 <!---
