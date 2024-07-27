@@ -1,9 +1,10 @@
-- 👋 Hi, I’m @Patizy-tel 6 Years Full Stack Developer
-- 👀 I’m interested in Software Development mainly NESTJS , Angular ,Reactjs ,  Nodejs and Mongodb
-- 🌱 I’m currently mastering system perfomance , security ,scalability and optimisations
-- 💞️ I’m looking to collaborate on  Frontend related stuff or backend stuff
+- 👋 Hi, I’m @Patizy-tel 6 Years Full Stack Developer (Magnificent Stallion Tello🔥)
+- 👀 I’m proficient in  NESTJS , Angular ,Reactjs ,  Nodejs and Mongodb
+- 🌱 I’m currently running  3 Startups , seasonal CTO in each of them
+- 💞️ I’m always experimenting ,  learning new stuff, making the world a  better place through technology
 - 📫 How to reach me  send a message on LinkedIn https://www.linkedin.com/in/patel-tanaka-3355a6100/
 -    ![](https://komarev.com/ghpvc/?username=Patizy-tel&color=green)
+-    [![trophy](https://github-profile-trophy.vercel.app/?username=Patizy-tel)](https://github.com/Patizy-tel/github-profile-trophy)
 <!---
 Patizy-tel/Patizy-tel is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
