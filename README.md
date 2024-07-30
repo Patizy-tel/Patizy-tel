@@ -4,6 +4,7 @@
 - 💞️ I’m always experimenting ,  learning new stuff, making the world a  better place through technology
 - 📫 How to reach me  send a message on LinkedIn https://www.linkedin.com/in/patel-tanaka-3355a6100/
 -    Chekc out my portfolio https://pateltanaka.onrender.com/
+-    [![wakatime](https://wakatime.com/badge/user/e445292e-9fc7-4465-952e-167d26595a5f.svg)](https://wakatime.com/@e445292e-9fc7-4465-952e-167d26595a5f)
 -    ![](https://komarev.com/ghpvc/?username=Patizy-tel&color=green)
 -    [![trophy](https://github-profile-trophy.vercel.app/?username=Patizy-tel)](https://github.com/Patizy-tel/github-profile-trophy)
 <!---
