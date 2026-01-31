@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Patizy-tel 6 Years Full Stack Developer (Magnificent Stallion Tello🔥)
+- 👋 Hi, I’m @Patizy-tel 10 Years Full Stack Developer (Magnificent Stallion Tello🔥)
 - 👀 I’m proficient in  NESTJS , Angular ,Reactjs ,  Nodejs and Mongodb
 - 🌱 I’m currently running  3 Startups , seasonal CTO in each of them
 - 💞️ I’m always experimenting ,  learning new stuff, making the world a  better place through technology
