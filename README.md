@@ -10,7 +10,7 @@
 </p>
 
 <a href="https://github.com/Patizy-tel">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=22C55E&center=true&vCenter=true&width=640&lines=Founder+building+real+products;Wondabox+%C2%B7+Daily+Sale+%C2%B7+RapidDev+Labs;From+idea+to+reality%2C+fast.+%F0%9F%9A%80" alt="What I build"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=800&color=22C55E&center=true&vCenter=true&width=640&lines=Founder+building+real+products;Wondabox+%C2%B7+Daily+Sale+%C2%B7+RapidDev+Labs;Where+others+see+problems%2C+we+see+solutions;Developer+Army+%F0%9F%92%AA;From+idea+to+reality%2C+fast.+%F0%9F%9A%80" alt="What I build"/>
 </a>
 
 <p>📍 Zimbabwe 🇿🇼</p>
