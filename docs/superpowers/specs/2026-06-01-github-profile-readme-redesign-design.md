@@ -28,14 +28,22 @@ see proof it ships, and have an obvious path to make contact.
 - A single `README.md` (markdown + light inline HTML for layout).
 - All dynamic content is rendered via free **hosted image services** (no GitHub Actions, no token,
   no workflow to maintain). Cards refresh themselves whenever GitHub re-fetches the images.
-- Services used:
+- Services used (public, healthy):
   - **capsule-render** — gradient hero banner + footer wave
-  - **readme-typing-svg** — animated tagline
+  - **readme-typing-svg** (demolab) — animated tagline
   - **shields.io** (`for-the-badge`) — contact + tech-stack badges
-  - **github-readme-stats** — stats card + top-languages (compact)
   - **streak-stats (demolab)** — contribution streak
-  - **github-profile-trophy** — trophies
   - **komarev** — profile-views counter
+- **Self-hosted on Render** (the public github-readme-stats instance is rate-limited — 503 —
+  and cannot count private repos):
+  - **github-readme-stats** deployed as a Node web service on the owner's Render account.
+    Serves the stats card, the commit/PR counts (per-year + all-time), and top-languages from
+    `https://<service>.onrender.com/api…`. A GitHub token (`PAT_1`) with **private-repo read
+    access** is set on the service so commit/PR counts include private work.
+  - **Render free-tier caveat:** services spin down after ~15 min idle (~50s cold start), which
+    can briefly break the embedded image. Optional mitigation: a Render cron job pinging the
+    service to keep it warm.
+- **Dropped:** github-profile-trophy (rate-limited 402; owner chose to skip trophies).
 
 ## Confirmed Content
 
@@ -53,7 +61,7 @@ see proof it ships, and have an obvious path to make contact.
 | LinkedIn | https://www.linkedin.com/in/patel-tanaka-3355a6100/ |
 | GitHub user (for stats) | `Patizy-tel` |
 
-## Layout — 8 stacked sections (top → bottom)
+## Layout — 7 stacked sections (top → bottom)
 
 The structure is a deliberate sales funnel: **hook → contact → offer → proof → close.**
 
@@ -67,20 +75,20 @@ The structure is a deliberate sales funnel: **hook → contact → offer → pro
    one-line pitch, tech line, and a CTA button linking to the live site.
 5. **Tech stack** — shields.io badges reflecting real repo languages: NestJS, Angular, React,
    Node.js, Express, MongoDB, TypeScript, JavaScript, Python.
-6. **Live GitHub stats** — `radical` theme. Must surface **commit and PR counts, both per-year
-   and all-time**:
-   - **All-time card:** github-readme-stats with `&include_all_commits=true` → shows **Total Commits
-     (all-time)** + **Total PRs** + stars + issues + contributions. Custom title "All-Time Impact".
-   - **This-year card:** a second github-readme-stats card *without* `include_all_commits` → shows
+6. **Live GitHub stats** — `radical` theme, served from the **self-hosted Render instance**.
+   Must surface **commit and PR counts, both per-year and all-time**:
+   - **All-time card:** `…/api?…&include_all_commits=true&count_private=true` → **Total Commits
+     (all-time, incl. private)** + **Total PRs** + stars + issues + contributions.
+     Custom title "All-Time Impact".
+   - **This-year card:** a second card *without* `include_all_commits` (with `count_private=true`) →
      **Total Commits (current year)** + PRs for the year. Custom title "This Year".
-   - Plus **streak-stats** (current/longest streak + total contributions) and **top-languages**
-     (compact).
-   - *Data caveat:* the public hosted services count **public** contributions; `include_all_commits`
-     approximates all-time. Private-repo commits/PRs are not included unless a self-hosted instance
-     with a PAT is used (out of scope for the no-token approach).
-7. **Trophies** — github-profile-trophy, `radical`, frameless.
-8. **CTA footer** — "Got a project? Let's build it. 🚀 — Open to clients, collaborations &
+   - Plus **streak-stats** (current/longest streak + total contributions, public demolab instance)
+     and **top-languages** (compact, from the Render instance `…/api/top-langs`).
+   - Because the instance uses a token with private-repo read access, counts reflect **all** work,
+     not just public.
+7. **CTA footer** — "Got a project? Let's build it. 🚀 — Open to clients, collaborations &
    consulting" + "Get in touch" (email) button + profile-views counter + capsule-render footer wave.
+   *(Trophy section dropped per owner decision.)*
 
 ## Rendering Notes / Constraints
 
@@ -95,18 +103,21 @@ The structure is a deliberate sales funnel: **hook → contact → offer → pro
 
 ## Out of Scope (YAGNI)
 
-- No GitHub Actions / cron automation.
+- No GitHub Actions in the profile repo (the README itself stays static).
 - No `wesetech-digital` org (owner did not prioritize it).
 - No blog-feed or WakaTime auto-injection.
+- No trophy card (dropped).
 
 ## Acceptance Criteria
 
+- [ ] github-readme-stats is deployed and reachable on Render (`https://<service>.onrender.com/api`
+      returns 200) with `PAT_1` set to a token that can read the owner's private repos.
 - [ ] README renders correctly on github.com/Patizy-tel (verified visually).
 - [ ] Hero leads with **Magnificent Tello 🔥** + the three products; no Flostec/title framing.
 - [ ] Wondabox appears first and is marked flagship; all three CTAs link to the correct live sites.
 - [ ] Contact badges (LinkedIn, X, Portfolio, Email) appear high on the page and all resolve.
-- [ ] Live stats/streak/top-langs/trophy cards render with the purple→pink `radical` theme.
-- [ ] Commit & PR counts are visible **both per-year (This Year card) and all-time (All-Time
-      Impact card with `include_all_commits=true`)**.
+- [ ] Stats / streak / top-langs cards render with the purple→pink `radical` theme.
+- [ ] Commit & PR counts are visible **both per-year (This Year card) and all-time (All-Time Impact
+      card)**, and reflect private work (`count_private=true`).
 - [ ] No raw HTML/CSS leaks (no visible `<style>`/`class` artifacts); layout holds on mobile widths.
 - [ ] The old broken `committers.top` badge and typos from the previous README are gone.
