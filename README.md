@@ -29,7 +29,9 @@
 
 ### 👋 About
 
-I build and run **🤖 Wondabox** and **🛒 Daily Sale**, and ship custom software for clients through **⚡ RapidDev Labs**. Where others see problems, I see solutions — and a project. Currently turning ideas into products across **AI, e-commerce, and custom software**.
+I build and run **🤖 Wondabox** and **🛒 Daily Sale**, and ship custom software for clients through **⚡ RapidDev Labs** — turning ideas into products across **AI, e-commerce, and custom software**.
+
+> 💪 *Where others see problems, we see solutions — and a project.* — **Developer Army**
 
 ---
 
